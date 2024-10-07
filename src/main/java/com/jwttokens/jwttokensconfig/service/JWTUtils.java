@@ -33,6 +33,7 @@ public class JWTUtils {
                 .signWith(Key)
                 .compact();
     }
+
     public String generateFreshToken(HashMap<String,Object> claims,UserDetails userDetails){
 
 
