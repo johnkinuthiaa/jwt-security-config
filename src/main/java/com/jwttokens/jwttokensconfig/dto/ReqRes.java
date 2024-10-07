@@ -2,7 +2,10 @@ package com.jwttokens.jwttokensconfig.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.jwttokens.jwttokensconfig.model.Products;
 import lombok.Data;
+
+import java.util.List;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -13,11 +16,11 @@ public class ReqRes {
     private String message;
     private String token;
     private String refreshToken;
-    private String expiryTIme;
+    private String expiryTime;
     private String name;
     private String email;
     private String role;
     private String password;
-    private List<Product> products;
+    private List<Products> products;
     private String ourUsers;
 }
