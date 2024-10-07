@@ -34,6 +34,7 @@ public class JWTUtils {
                 .compact();
     }
     public String generateFreshToken(HashMap<String,Object> claims,UserDetails userDetails){
+
         return Jwts.builder()
                 .claims(claims)
                 .subject(userDetails.getUsername())
