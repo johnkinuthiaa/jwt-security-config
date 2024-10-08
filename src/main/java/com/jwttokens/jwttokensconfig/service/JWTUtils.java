@@ -1,7 +1,6 @@
 package com.jwttokens.jwttokensconfig.service;
 
 import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
@@ -35,7 +34,6 @@ public class JWTUtils {
     }
 
     public String generateFreshToken(HashMap<String,Object> claims,UserDetails userDetails){
-
 
         return Jwts.builder()
                 .claims(claims)
