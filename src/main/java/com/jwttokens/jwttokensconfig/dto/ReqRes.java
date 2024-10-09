@@ -2,6 +2,7 @@ package com.jwttokens.jwttokensconfig.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.jwttokens.jwttokensconfig.model.OurUsers;
 import com.jwttokens.jwttokensconfig.model.Products;
 import lombok.Data;
 
@@ -22,5 +23,5 @@ public class ReqRes {
     private String role;
     private String password;
     private List<Products> products;
-    private String ourUsers;
+    private OurUsers ourUsers;
 }
